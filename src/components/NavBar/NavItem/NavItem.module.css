@@ -1,0 +1,18 @@
+.navItem {
+  width: fit-content;
+  height: 2rem;
+  color: white;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem  0 1rem;
+}
+
+.navItem:hover {
+  background-color: rgba(39, 39, 39, 0.623);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.span {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
