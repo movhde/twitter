@@ -14,39 +14,42 @@ import classes from './NavItems.module.css';
 
 const NAVBAR = [
   {
-    icon: <GoHomeFill />,
+    icon: RiTwitterXFill
+  },
+  {
+    icon: GoHomeFill,
     name: "Home",
   },
   {
-    icon: <FiSearch />,
+    icon: FiSearch,
     name: "Explore",
   },
   {
-    icon: <RiNotification2Line />,
+    icon: RiNotification2Line,
     name: "Notification",
   },
   {
-    icon: <MdOutlineMailOutline />,
+    icon: MdOutlineMailOutline,
     name: "Messages",
   },
   {
-    icon: <RiFileListLine />,
+    icon: RiFileListLine,
     name: "Lists",
   },
   {
-    icon: <BsPeople />,
+    icon: BsPeople,
     name: "Communities",
   },
   {
-    icon: <RiTwitterXFill />,
+    icon: RiTwitterXFill,
     name: "Premium",
   },
   {
-    icon: <CgProfile />,
+    icon: CgProfile,
     name: "Profile",
   },
   {
-    icon: <CgMoreO />,
+    icon: CgMoreO,
     name: "More",
   },
 ];
@@ -54,7 +57,6 @@ const NAVBAR = [
 const NavItems = () => {
   return (
     <ul className={classes.navItems}>
-      <RiTwitterXFill style={{ fontSize: "2rem"}} />
       {NAVBAR.map((item) => (
         <NavItem key={Math.random()} icon={item.icon} name={item.name} />
       ))}

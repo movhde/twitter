@@ -3,6 +3,6 @@
   width: inherit;
   height: 100vh;
   margin: 0;
-  padding: 1rem 1rem;
+  padding: 0 0.5rem 1rem 0.5rem;
   border-right: 1px solid #5a5a5a96;
 }
