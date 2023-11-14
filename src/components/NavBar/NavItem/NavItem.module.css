@@ -2,16 +2,22 @@
   width: fit-content;
   height: 2rem;
   color: white;
-  margin: 0.5rem 0;
+  margin: 0.25rem 0.5rem;
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
+  border-radius: 2rem;
   font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.navItem:first-child {
+  margin-top: 0;
+  padding-right: 0;
 }
 
 .navItem:hover {
   background-color: rgba(39, 39, 39, 0.623);
-  border-radius: 2rem;
   cursor: pointer;
 }
 

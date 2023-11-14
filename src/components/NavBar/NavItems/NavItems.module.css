@@ -1,8 +1,59 @@
 .navItems {
   max-width: 16rem;
   width: inherit;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0 0.5rem 1rem 0.5rem;
   border-right: 1px solid #5a5a5a96;
+}
+
+.account {
+  width: 95%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  margin: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.account:hover {
+  background-color: rgba(39, 39, 39, 0.623);
+}
+
+.profile {
+  width: 20%;
+  margin-left: 0.75rem;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 90%;
+  border-radius: 50%;
+}
+
+.usernameContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.userId {
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+.icon {
+  width: 10%;
+  margin-right: 0.5rem;
 }

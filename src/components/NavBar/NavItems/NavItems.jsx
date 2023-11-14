@@ -6,15 +6,17 @@ import {
   RiFileListLine,
 } from "react-icons/ri";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { BsPeople } from "react-icons/bs";
+import { BsPeople, BsThreeDots } from "react-icons/bs";
 import { CgProfile, CgMoreO } from "react-icons/cg";
 import NavItem from "../NavItem/NavItem";
 
-import classes from './NavItems.module.css';
+import image from "../../../assets/movahedeProfile.jpg";
+import classes from "./NavItems.module.css";
+import Button from "../../UI/Button";
 
 const NAVBAR = [
   {
-    icon: RiTwitterXFill
+    icon: RiTwitterXFill,
   },
   {
     icon: GoHomeFill,
@@ -60,6 +62,19 @@ const NavItems = () => {
       {NAVBAR.map((item) => (
         <NavItem key={Math.random()} icon={item.icon} name={item.name} />
       ))}
+      <Button width="big">Post</Button>
+      <div className={classes.account}>
+        <div className={classes.profile} >
+          <img src={image} alt="Profile Picture" />
+        </div>
+        <div className={classes.usernameContainer}>
+          <span className={classes.username}>movhde</span>
+          <span className={classes.userId}>@movahde</span>
+        </div>
+        <div className={classes.icon}>
+          <BsThreeDots size={18} />
+        </div>
+      </div>
     </ul>
   );
 };
