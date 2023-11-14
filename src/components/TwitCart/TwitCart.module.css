@@ -1,0 +1,86 @@
+.twitContainer {
+  max-width: 45%;
+  width: inherit;
+  height: fit-content;
+  border: 1px solid #5a5a5a96;
+  border-left: none;
+  border-top: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.twitBody {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar {
+  margin: 0 1rem;
+  padding-top: 1rem;
+}
+
+.body {
+  padding: 1rem 0 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.body textarea {
+  width: 95%;
+  font: inherit;
+  font-size: large;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  resize: none;
+}
+
+.navigateBar {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icons__icon {
+  color: #1d9bf0;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.postBtn {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.additional {
+  width: 95%;
+  border-bottom: 1px solid #5a5a5a96;
+  padding-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+.additional div {
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  color: #1d9bf0;
+  border-radius: 2rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  font-weight: bold;
+}
+
+.additional div:hover {
+  background-color: #0d314983;
+}
+
+.earthIcon {
+  margin-right: 0.5rem;
+}

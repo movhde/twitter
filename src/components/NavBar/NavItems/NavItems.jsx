@@ -13,6 +13,7 @@ import NavItem from "../NavItem/NavItem";
 import image from "../../../assets/movahedeProfile.jpg";
 import classes from "./NavItems.module.css";
 import Button from "../../UI/Button";
+import Avatar from "../../UI/Avatar";
 
 const NAVBAR = [
   {
@@ -65,7 +66,7 @@ const NavItems = () => {
       <Button width="big">Post</Button>
       <div className={classes.account}>
         <div className={classes.profile} >
-          <img src={image} alt="Profile Picture" />
+          <Avatar />
         </div>
         <div className={classes.usernameContainer}>
           <span className={classes.username}>movhde</span>
