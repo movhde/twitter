@@ -1,0 +1,27 @@
+.replyPermission {
+  width: 95%;
+  border-bottom: 1px solid #5a5a5a96;
+  padding-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+.replyPermission div {
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  color: #1d9bf0;
+  border-radius: 2rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  font-weight: bold;
+}
+
+.replyPermission div:hover {
+  background-color: #0d314983;
+}
+
+.earthIcon {
+  margin-right: 0.5rem;
+}
