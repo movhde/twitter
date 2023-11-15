@@ -1,30 +1,28 @@
 import { TbPhoto } from "react-icons/tb";
 import { MdOutlineGifBox } from "react-icons/md";
-// import { BiPoll } from "react-icons/bi";
 import { RiListRadio } from "react-icons/ri";
 import { BsEmojiSmile } from "react-icons/bs";
 import { TbCalendarTime } from "react-icons/tb";
 import { SlLocationPin } from "react-icons/sl";
-import { FaEarthAmericas } from "react-icons/fa6";
 
-import Avatar from "../UI/Avatar";
-import classes from "./TwitCart.module.css";
-import Button from "../UI/Button";
+import Avatar from "../../UI/Avatar";
+import ReplyPermission from "./ReplyPermission";
+import classes from "./TwitPost.module.css";
+import Button from "../../UI/Button";
 import { useState } from "react";
 
 const ICONS = (
   <>
-    <TbPhoto className={classes["icons__icon"]} />
-    <MdOutlineGifBox className={classes["icons__icon"]} />
-    {/* <BiPoll className={classes['icons__icon']} /> */}
-    <RiListRadio className={classes["icons__icon"]} />
-    <BsEmojiSmile className={classes["icons__icon"]} />
-    <TbCalendarTime className={classes["icons__icon"]} />
-    <SlLocationPin className={classes["icons__icon"]} />
+    <TbPhoto className={classes["attachment-icons"]} />
+    <MdOutlineGifBox className={classes["attachment-icons"]} />
+    <RiListRadio className={classes["attachment-icons"]} />
+    <BsEmojiSmile className={classes["attachment-icons"]} />
+    <TbCalendarTime className={classes["attachment-icons"]} />
+    <SlLocationPin className={classes["attachment-icons"]} />
   </>
 );
 
-const TwitCart = () => {
+const TwitPost = () => {
   const [enteredText, setEnteredText] = useState("");
 
   const inputChangeHandler = (event) => {
@@ -32,17 +30,8 @@ const TwitCart = () => {
     console.log(enteredText);
   };
 
-  const additionalDiv = (
-    <div className={classes.additional}>
-      <div>
-        <FaEarthAmericas className={classes.earthIcon} />
-        <span>Every one can reply</span>
-      </div>
-    </div>
-  );
-
   return (
-    <div className={classes.twitContainer}>
+    <div className={classes.twitPost}>
       <div className={classes.avatar}>
         <Avatar />
       </div>
@@ -51,14 +40,14 @@ const TwitCart = () => {
           <textarea
             value={enteredText}
             onChange={inputChangeHandler}
-            rows={1}
+            rows={2}
             type="text"
             placeholder="What is happening?!"
           />
-          {enteredText && additionalDiv}
+          {enteredText && <ReplyPermission />}
         </div>
-        <div className={classes.navigateBar}>
-          <div className={classes.icons}>{ICONS}</div>
+        <div className={classes.attachBar}>
+          <div className={classes.attachment}>{ICONS}</div>
           <div className={classes.postBtn}>
             <Button width="small" className={enteredText ? "" : "disable"}>
               Post
@@ -70,4 +59,4 @@ const TwitCart = () => {
   );
 };
 
-export default TwitCart;
+export default TwitPost;
