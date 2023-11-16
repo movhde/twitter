@@ -10,18 +10,19 @@
 }
 
 .twitBody {
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
 .avatar {
-  margin: 0 1rem;
-  padding-top: 1rem;
+  width: 10%;
+  height: auto;
+  margin: 1rem;
 }
 
 .body {
   padding: 1rem 0 0.5rem;
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
 }
 
 .body textarea {
@@ -45,14 +46,34 @@
   justify-content: flex-start;
 }
 
+.attachment-icons-area {
+  max-width: 10%;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.attachment-icons-area:hover {
+  background-color: #0c3e5f5e;
+  cursor: pointer;
+}
+
 .attachment-icons {
   color: #1d9bf0;
   font-size: 1.25rem;
-  margin-right: 1rem;
 }
 
 .postBtn {
   width: 25%;
   display: flex;
   justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1000px) {
+  .attachment-icons-area {
+    padding: 0.25rem;
+  }
 }

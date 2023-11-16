@@ -34,6 +34,7 @@
   opacity: 0.5;
   pointer-events: none;
 }
+
 .button:hover,
 .button:active {
   background-color: #1884cc;

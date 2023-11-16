@@ -10,7 +10,6 @@ import { BsPeople, BsThreeDots } from "react-icons/bs";
 import { CgProfile, CgMoreO } from "react-icons/cg";
 import NavItem from "../NavItem/NavItem";
 
-import image from "../../../assets/movahedeProfile.jpg";
 import classes from "./NavItems.module.css";
 import Button from "../../UI/Button";
 import Avatar from "../../UI/Avatar";

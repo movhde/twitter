@@ -13,12 +13,24 @@ import { useState } from "react";
 
 const ICONS = (
   <>
-    <TbPhoto className={classes["attachment-icons"]} />
-    <MdOutlineGifBox className={classes["attachment-icons"]} />
-    <RiListRadio className={classes["attachment-icons"]} />
-    <BsEmojiSmile className={classes["attachment-icons"]} />
-    <TbCalendarTime className={classes["attachment-icons"]} />
-    <SlLocationPin className={classes["attachment-icons"]} />
+    <div className={classes["attachment-icons-area"]}>
+      <TbPhoto title="Media" className={classes["attachment-icons"]} />
+    </div>
+    <div className={classes["attachment-icons-area"]}>
+      <MdOutlineGifBox title="Gif" className={classes["attachment-icons"]} />
+    </div>
+    <div className={classes["attachment-icons-area"]}>
+      <RiListRadio title="Poll" className={classes["attachment-icons"]} />
+    </div>
+    <div className={classes["attachment-icons-area"]}>
+      <BsEmojiSmile title="Emoji" className={classes["attachment-icons"]} />
+    </div>
+    <div className={classes["attachment-icons-area"]}>
+      <TbCalendarTime title="Schedule" className={classes["attachment-icons"]} />
+    </div>
+    <div className={classes["attachment-icons-area"]}>
+      <SlLocationPin title="Location" className={classes["attachment-icons"]} />
+    </div>
   </>
 );
 
