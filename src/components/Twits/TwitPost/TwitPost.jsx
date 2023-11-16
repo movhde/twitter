@@ -10,6 +10,7 @@ import ReplyPermission from "./ReplyPermission";
 import classes from "./TwitPost.module.css";
 import Button from "../../UI/Button";
 import { useState } from "react";
+import Card from "../../UI/Card/Card";
 
 const ICONS = (
   <>
@@ -43,7 +44,7 @@ const TwitPost = () => {
   };
 
   return (
-    <div className={classes.twitPost}>
+    <Card>
       <div className={classes.avatar}>
         <Avatar />
       </div>
@@ -67,7 +68,7 @@ const TwitPost = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 
