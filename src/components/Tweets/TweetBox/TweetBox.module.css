@@ -1,0 +1,67 @@
+.avatar {
+  width: 10%;
+  height: auto;
+  margin: 1rem;
+  margin-right: 0;
+}
+
+.tweetBox {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem 0;
+}
+
+.tweetInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.tweetInfo-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 14rem;
+}
+
+.light-size {
+  font-weight: lighter;
+}
+
+.text-underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.moreIcon-container {
+  width: 10%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tweetBox-body {
+  width: 100%;
+  height: fit-content;
+  direction: rtl;
+  padding: 0 0.5rem 1rem 0;
+}
+
+.interactionBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.interactionBar-icon {
+  color: gray;
+  font-size: 1.25rem;
+}
+
+.independent-icons {
+  display: flex;
+}
