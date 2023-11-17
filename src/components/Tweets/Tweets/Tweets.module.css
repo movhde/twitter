@@ -1,0 +1,8 @@
+.tweets {
+  max-width: 45%;
+  min-width: 550px;
+  width: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

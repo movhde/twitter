@@ -1,4 +1,4 @@
-.twitBody {
+.tweetBody {
   width: 90%;
   height: 100%;
 }
@@ -7,6 +7,7 @@
   width: 10%;
   height: auto;
   margin: 1rem;
+  margin-right: 0;
 }
 
 .body {
@@ -33,26 +34,6 @@
   width: 75%;
   display: flex;
   justify-content: flex-start;
-}
-
-.attachment-icons-area {
-  max-width: 10%;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 100%;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.attachment-icons-area:hover {
-  background-color: #0c3e5f5e;
-  cursor: pointer;
-}
-
-.attachment-icons {
-  color: #1d9bf0;
-  font-size: 1.25rem;
 }
 
 .postBtn {

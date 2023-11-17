@@ -7,35 +7,37 @@ import { SlLocationPin } from "react-icons/sl";
 
 import Avatar from "../../UI/Avatar";
 import ReplyPermission from "./ReplyPermission";
-import classes from "./TwitPost.module.css";
+import classes from "./TweetPost.module.css";
 import Button from "../../UI/Button";
 import { useState } from "react";
 import Card from "../../UI/Card/Card";
+// import Icons from "./Icons";
+import styles from "./Icons.module.css";
 
 const ICONS = (
   <>
-    <div className={classes["attachment-icons-area"]}>
-      <TbPhoto title="Media" className={classes["attachment-icons"]} />
+    <div className={styles["icons-area"]}>
+      <TbPhoto title="Media" className={styles.icons} />
     </div>
-    <div className={classes["attachment-icons-area"]}>
-      <MdOutlineGifBox title="Gif" className={classes["attachment-icons"]} />
+    <div className={styles["icons-area"]}>
+      <MdOutlineGifBox title="Gif" className={styles.icons} />
     </div>
-    <div className={classes["attachment-icons-area"]}>
-      <RiListRadio title="Poll" className={classes["attachment-icons"]} />
+    <div className={styles["icons-area"]}>
+      <RiListRadio title="Poll" className={styles.icons} />
     </div>
-    <div className={classes["attachment-icons-area"]}>
-      <BsEmojiSmile title="Emoji" className={classes["attachment-icons"]} />
+    <div className={styles["icons-area"]}>
+      <BsEmojiSmile title="Emoji" className={styles.icons} />
     </div>
-    <div className={classes["attachment-icons-area"]}>
-      <TbCalendarTime title="Schedule" className={classes["attachment-icons"]} />
+    <div className={styles["icons-area"]}>
+      <TbCalendarTime title="Schedule" className={styles.icons} />
     </div>
-    <div className={classes["attachment-icons-area"]}>
-      <SlLocationPin title="Location" className={classes["attachment-icons"]} />
+    <div className={styles["icons-area"]}>
+      <SlLocationPin title="Location" className={styles.icons} />
     </div>
   </>
 );
 
-const TwitPost = () => {
+const TweetPost = () => {
   const [enteredText, setEnteredText] = useState("");
 
   const inputChangeHandler = (event) => {
@@ -48,7 +50,7 @@ const TwitPost = () => {
       <div className={classes.avatar}>
         <Avatar />
       </div>
-      <div className={classes.twitBody}>
+      <div className={classes.tweetBody}>
         <div className={classes.body}>
           <textarea
             value={enteredText}
@@ -72,4 +74,4 @@ const TwitPost = () => {
   );
 };
 
-export default TwitPost;
+export default TweetPost;

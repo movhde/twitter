@@ -1,13 +1,13 @@
 import classes from './App.module.css'
 import NavItems from './components/NavBar/NavItems/NavItems'
-import TwitPost from './components/Twits/TwitPost/TwitPost'
+import Tweets from './components/Tweets/Tweets/Tweets'
 
 function App() {
 
   return (
     <div className={classes.main}>
       <NavItems />
-      <TwitPost />
+      <Tweets />
     </div>
   )
 }

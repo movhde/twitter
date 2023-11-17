@@ -2,8 +2,8 @@
   width: fit-content;
   height: 2rem;
   color: white;
-  margin: 0.25rem 0.5rem;
-  padding: 0.5rem 1rem;
+  margin: 0.75rem 0.5rem;
+  padding: 1rem 1rem;
   display: flex;
   align-items: center;
   border-radius: 2rem;
@@ -28,7 +28,7 @@
   font-size: 1.75rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .navItem span {
     display: none;
   }
