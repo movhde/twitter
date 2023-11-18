@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  min-width: 550px;
+  height: fit-content;
+  border: 1px solid #5a5a5a96;
+  border-top: none;
+  display: flex;
+  position: sticky;
+  top: -0.1px;
+  background: rgba( 0, 0, 0, 0.6 );
+  backdrop-filter: blur(10px);
+  z-index: 3;
+}
+
+.forYou-section, .following-section {
+  width: 45%;
+  height: 3.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  transition: 0.3s;
+}
+
+.forYou-section:hover,
+.following-section:hover {
+  background-color: #2b2b2b31;
+  cursor: pointer;
+}
+
+.forYou-section:active,
+.following-section:active {
+  color: white;
+}
+
+.setting-icon {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.setting-icon:hover {
+  background-color: #2b2b2b31;
+  cursor: pointer;
+}
