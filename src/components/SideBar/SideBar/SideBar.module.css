@@ -1,44 +1,27 @@
 .sideBar {
   width: 30%;
   height: 100%;
-}
-
-.searchBox-container {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
 }
 
-.searchBox-container__inner {
+.premium-section {
   width: 90%;
+  height: fit-content;
   display: flex;
-  justify-content: space-around;
-  border-radius: 3rem;
-  background-color: #202327;
-  margin: 0.2rem;
-  padding: 0.95rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.25rem;
+  background-color: #16181c;
+  border-radius: 15px;
+  padding: 1rem;
 }
 
-.searchBox {
-  width: 90%;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  padding-left: 0.5rem;
-  font-size: 0.9rem;
-}
-
-.searchIcon {
-  color: gray;
+.premium-title {
+  font-family: inherit;
+  font-weight: bolder;
   font-size: 1.25rem;
-}
-
-.border {
-  border: 1px solid #1d9bf0;
-  background-color: transparent;
-}
-
-.icon-color {
-  color: #1d9bf0;
 }

@@ -1,30 +1,17 @@
-import { FiSearch } from "react-icons/fi";
-import classes from "./SideBar.module.css";
-import { useState } from "react";
+import SearchBox from "./SearchBox";
+import Button from '../../UI/Button';
+import classes from './SideBar.module.css'
 
 const SideBar = () => {
-  const [isClicked, setIsClicked] = useState(false);
-
-  let cssClass = classes["searchBox-container__inner"];
-
   return (
-    <>
-      <div className={classes.sideBar}>
-        <div className={classes["searchBox-container"]}>
-          <div
-            className={`${cssClass} ${isClicked ? classes.border : ""}`}
-            onClick={() => setIsClicked(true)}
-          >
-            <FiSearch
-              className={`${classes.searchIcon} ${
-                isClicked ? classes["icon-color"] : ""
-              }`}
-            />
-            <input className={classes.searchBox} />
-          </div>
-        </div>
+    <div className={classes.sideBar}>
+      <SearchBox />
+      <div className={classes['premium-section']}>
+        <span className={classes['premium-title']}>Subscribe to Premium</span>
+        <span>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</span>
+        <Button width='middle'>Subscribe</Button>
       </div>
-    </>
+    </div>
   );
 };
 
