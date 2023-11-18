@@ -1,9 +1,8 @@
-import image from '../../assets/movahedeProfile.jpg';
 import classes from './Avatar.module.css';
 
-const Avatar = () => {
+const Avatar = (props) => {
   return (
-    <img className={classes.avatar} src={image} alt="Profile Picture" />
+    <img className={classes.avatar} src={props.src} alt="Profile Picture" />
   )
 }
 

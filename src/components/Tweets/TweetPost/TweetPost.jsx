@@ -11,8 +11,8 @@ import classes from "./TweetPost.module.css";
 import Button from "../../UI/Button";
 import { useState } from "react";
 import Card from "../../UI/Card/Card";
-// import Icons from "./Icons";
 import styles from "./Icons.module.css";
+import image from '../../../assets/movahedeProfile.jpg'
 
 const ICONS = (
   <>
@@ -48,7 +48,7 @@ const TweetPost = () => {
   return (
     <Card>
       <div className={classes.avatar}>
-        <Avatar />
+        <Avatar src={image} />
       </div>
       <div className={classes.tweetBody}>
         <div className={classes.body}>
