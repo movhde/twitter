@@ -13,51 +13,83 @@ import styles from "../TweetPost/Icons.module.css";
 
 const ICONS = (
   <>
-    <div className={styles["icons-area"]}>
-      <LuMessageCircle
-        title="Reply"
-        className={classes["interactionBar-icon"]}
-      />
+    <div className={classes["interaction-bar__item"]}>
+      <div className={`${styles["icons-area"]} ${classes.blue}`}>
+        <LuMessageCircle
+          title="Reply"
+          className={`${classes["interactionBar-icon"]} ${classes.blueItem}`}
+        />
+      </div>
+      <div>
+        <span className={classes.blueItem}>120</span>
+      </div>
     </div>
-    <div className={styles["icons-area"]}>
-      <FaRetweet title="Repost" className={classes["interactionBar-icon"]} />
+    <div className={classes["interaction-bar__item"]}>
+      <div className={`${styles["icons-area"]} ${classes.green}`}>
+        <FaRetweet
+          title="Repost"
+          className={`${classes["interactionBar-icon"]} ${classes.greenItem}`}
+        />
+      </div>
+      <div>
+        <span className={classes.greenItem}>10</span>
+      </div>
     </div>
-    <div className={styles["icons-area"]}>
-      <GoHeart title="Like" className={classes["interactionBar-icon"]} />
+    <div className={classes["interaction-bar__item"]}>
+      <div className={`${styles["icons-area"]} ${classes.purple}`}>
+        <GoHeart
+          title="Like"
+          className={`${classes["interactionBar-icon"]} ${classes.purpleItem}`}
+        />
+      </div>
+      <div>
+        <span className={classes.purpleItem}>230</span>
+      </div>
     </div>
-    <div className={styles["icons-area"]}>
-      <IoStatsChart title="View" className={classes["interactionBar-icon"]} />
+    <div className={classes["interaction-bar__item"]}>
+      <div className={`${styles["icons-area"]} ${classes.blue}`}>
+        <IoStatsChart
+          title="View"
+          className={`${classes["interactionBar-icon"]} ${classes.blueItem}`}
+        />
+      </div>
+      <div>
+        <span className={classes.blueItem}>23</span>
+      </div>
     </div>
     <div className={classes["independent-icons"]}>
       <div className={styles["icons-area"]}>
         <FaRegBookmark
-          className={classes["interactionBar-icon"]}
+          className={`${classes["interactionBar-icon"]} ${styles.blueItem}`}
           title="Bookmark"
         />
       </div>
       <div className={styles["icons-area"]}>
-        <FiUpload className={classes["interactionBar-icon"]} title="Share" />
+        <FiUpload
+          className={`${classes["interactionBar-icon"]} ${styles.blueItem}`}
+          title="Share"
+        />
       </div>
     </div>
   </>
 );
 
-const TweetBox = () => {
+const TweetBox = (props) => {
   return (
-    <Card>
+    <Card className="backdrop">
       <div className={classes.avatar}>
-        <Avatar />
+        <Avatar src={props.image} />
       </div>
       <div className={classes.tweetBox}>
         <div className={classes.tweetInfo}>
           <div className={classes["tweetInfo-inner"]}>
-            <span className={classes["text-underline"]}>sajjad</span>
-            <span className={classes["light-size"]}>@_nakhodayebinam</span>
+            <span className={classes["text-underline"]}>{props.username}</span>
+            <span className={classes["light-size"]}>{props.userId}</span>
             <span className={classes["light-size"]}>.</span>
             <span
               className={`${classes["light-size"]} ${classes["text-underline"]}`}
             >
-              13h
+              {props.time}
             </span>
           </div>
           <div className={classes["moreIcon-container"]}>
@@ -67,7 +99,7 @@ const TweetBox = () => {
           </div>
         </div>
         <div className={classes["tweetBox-body"]}>
-          <p>Some random tweet</p>
+          <p dir="auto">{props.tweetBody}</p>
         </div>
         <div className={classes.interactionBar}>{ICONS}</div>
       </div>
