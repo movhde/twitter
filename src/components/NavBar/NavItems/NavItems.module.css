@@ -1,11 +1,12 @@
 .navItems {
-  max-width: 350px;
-  min-width: 100px;
-  width: 23%;
+  max-width: 23%;
+  min-width: 90px;
+  width: 100%;
   height: 100vh;
   margin: 0;
-  padding: 1rem 0.5rem 1rem 0.5rem;
-  border-right: 1px solid #5a5a5a96;
+  padding: 0.25rem 0.5rem 1rem 0.5rem;
+  position: sticky;
+  top: -0.1px;
 }
 
 .account {

@@ -1,17 +1,18 @@
 .tweetBody {
   width: 90%;
   height: 100%;
+  position: relative;
 }
 
 .avatar {
   width: 10%;
-  height: auto;
+  height: 100%;
   margin: 1rem;
   margin-right: 0;
 }
 
 .body {
-  padding: 1rem 0 0.5rem;
+  padding-top: 1rem;
   margin-top: 0.5rem;
 }
 
@@ -23,6 +24,7 @@
   border: none;
   background-color: transparent;
   resize: none;
+  word-break: break-all;
 }
 
 .attachBar {

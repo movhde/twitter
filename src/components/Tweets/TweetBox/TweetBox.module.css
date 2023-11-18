@@ -10,7 +10,7 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem 1rem 0;
+  padding: 0 1rem 0.5rem 0;
 }
 
 .tweetInfo {
@@ -24,8 +24,7 @@
 
 .tweetInfo-inner {
   display: flex;
-  justify-content: space-between;
-  width: 14rem;
+  gap: 0.25rem;
 }
 
 .light-size {
@@ -47,8 +46,11 @@
 .tweetBox-body {
   width: 100%;
   height: fit-content;
-  direction: rtl;
   padding: 0 0.5rem 1rem 0;
+}
+
+.tweetBox-body p {
+  word-break: break-all;
 }
 
 .interactionBar {
@@ -58,10 +60,44 @@
 }
 
 .interactionBar-icon {
-  color: gray;
-  font-size: 1.25rem;
+  color: #535353;
+  font-size: 1rem;
 }
 
 .independent-icons {
   display: flex;
+}
+
+.interaction-bar__item {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.interaction-bar__item div:last-child span {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.interaction-bar__item:hover .blue {
+  background-color: #0c3e5f5e;
+}
+
+.interaction-bar__item:hover .blueItem {
+  color: #1d9bf0;
+}
+
+.interaction-bar__item:hover .green {
+  background-color: #047a2b1c;
+}
+
+.interaction-bar__item:hover .greenItem {
+  color: #31be6c;
+}
+.interaction-bar__item:hover .purple {
+  background-color: #b6537c54;
+}
+
+.interaction-bar__item:hover .purpleItem {
+  color: #e62981;
 }

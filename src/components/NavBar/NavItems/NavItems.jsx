@@ -9,6 +9,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { BsPeople, BsThreeDots } from "react-icons/bs";
 import { CgProfile, CgMoreO } from "react-icons/cg";
 import NavItem from "../NavItem/NavItem";
+import image from '../../../assets/movahedeProfile.jpg'
 
 import classes from "./NavItems.module.css";
 import Button from "../../UI/Button";
@@ -65,7 +66,7 @@ const NavItems = () => {
       <Button width="big">Post</Button>
       <div className={classes.account}>
         <div className={classes.profile} >
-          <Avatar />
+          <Avatar src={image} />
         </div>
         <div className={classes.usernameContainer}>
           <span className={classes.username}>movhde</span>

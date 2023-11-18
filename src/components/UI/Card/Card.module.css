@@ -1,9 +1,16 @@
-.card {
+.card, .backdrop {
   width: inherit;
   height: fit-content;
   border: 1px solid #5a5a5a96;
-  border-left: none;
   border-top: none;
   display: flex;
-  justify-content: flex-end;
+}
+
+.backdrop {
+  transition: 0.3s;
+}
+
+.backdrop:hover {
+  cursor: pointer;
+  background-color: #2b2b2b31;
 }

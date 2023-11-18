@@ -5,11 +5,16 @@
   padding: 0.5rem;
   display: flex;
   justify-content: center;
+  transition: 0.3s;
 }
 
 .icons-area:hover {
   background-color: #0c3e5f5e;
   cursor: pointer;
+}
+
+.icons-area:hover .blueItem {
+  color: #1d9bf0;
 }
 
 .icons {
