@@ -1,0 +1,30 @@
+
+.trendsBox {
+  width: 100%;
+  height: auto;
+}
+
+.trendsBox__inner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.trendBox-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trendBox-body span,
+.trendsBox__inner span:last-child {
+  color: #71767b;
+  font-size: 0.8rem;
+}
+
+.trendsBox:hover {
+  cursor: pointer;
+  background-color: #2b2b2b31;
+}

@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  background-color: black;
+  top: -0.1px;
 }
 
 .searchBox-container__inner {

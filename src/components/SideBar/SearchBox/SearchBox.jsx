@@ -20,7 +20,7 @@ const SearchBox = () => {
             isClicked ? classes["icon-color"] : ""
           }`}
         />
-        <input className={classes.searchBox} />
+        <input placeholder="Search" className={classes.searchBox} />
       </div>
     </div>
   );

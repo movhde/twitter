@@ -1,0 +1,14 @@
+.messages {
+  width: 22rem;
+  height: auto;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0.5rem 1rem;
+  position: fixed;
+  bottom: 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0 0 9px #646464;
+}
