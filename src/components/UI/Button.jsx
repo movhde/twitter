@@ -6,6 +6,8 @@ const Button = (props) => {
       className={[
         classes.button,
         classes[props.width],
+        classes[props.color],
+        classes[props.bgColor],
         classes[props.className],
       ].join(" ")}
     >

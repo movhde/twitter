@@ -94,7 +94,10 @@ const TweetBox = (props) => {
           </div>
           <div className={classes["moreIcon-container"]}>
             <div className={styles["icons-area"]}>
-              <BsThreeDots color="gray" title="More" />
+              <BsThreeDots
+                className={`${styles.blueItem} ${classes["interactionBar-icon"]}`}
+                title="More"
+              />
             </div>
           </div>
         </div>

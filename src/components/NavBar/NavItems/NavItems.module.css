@@ -9,6 +9,12 @@
   top: -0.1px;
 }
 
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .account {
   width: 95%;
   height: 4rem;

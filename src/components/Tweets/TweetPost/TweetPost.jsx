@@ -53,6 +53,7 @@ const TweetPost = () => {
       <div className={classes.tweetBody}>
         <div className={classes.body}>
           <textarea
+            dir="auto"
             value={enteredText}
             onChange={inputChangeHandler}
             rows={2}

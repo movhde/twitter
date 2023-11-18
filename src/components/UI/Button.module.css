@@ -10,13 +10,15 @@
   border-radius: 2rem;
   cursor: pointer;
   margin: 0.5rem;
-  padding: 0.5rem 1.25rem;
+  margin-left: 0;
+  padding: 0.25rem 1rem;
   transition: 0.3s;
 }
 
 .small {
   width: fit-content;
   height: fit-content;
+  font-size: 0.9rem;
 }
 
 .middle {
@@ -29,6 +31,14 @@
   height: 3rem;
 }
 
+.white {
+  color: black;
+}
+
+.black {
+  background-color: white;
+}
+
 .disable {
   background-color: rgb(29, 155, 240);
   opacity: 0.5;
@@ -37,5 +47,5 @@
 
 .button:hover,
 .button:active {
-  background-color: #1884cc;
+  opacity: 0.8;
 }
