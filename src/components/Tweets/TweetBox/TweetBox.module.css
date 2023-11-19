@@ -53,6 +53,20 @@
   word-break: break-all;
 }
 
+.tweetBox-image {
+  object-fit: cover;
+  margin-top: 1rem;
+  border-radius: 15px;
+  border: 1px solid #5a5a5a96;
+}
+
+.tweetBox-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: block;
+}
+
 .interactionBar {
   width: 100%;
   display: flex;

@@ -1,46 +1,56 @@
+import billPic from "../../../assets/bill.jpg";
+import adelePic from "../../../assets/adele.jpg";
+import alirezaPic from "../../../assets/alirezaghorbani.jpg";
+import taherPic from "../../../assets/taher.jpg";
+import jadiPic from "../../../assets/jadi.jpg";
+import poster from "../../../assets/poster.jpg";
+import meals from "../../../assets/meals.jpg";
+
 import Header from "../Header/Header";
 import TweetBox from "../TweetBox/TweetBox";
 import TweetPost from "../TweetPost/TweetPost";
 import classes from "./Tweets.module.css";
-import image from '../../../assets/movahedeProfile.jpg'
 
 const TWEETS = [
   {
-    username: "sajjad",
-    userId: "@_Nakhodaye",
-    time: "13h",
-    tweetBody: "بدنه توییت اول.",
-    image: image,
-  },
-  {
-    username: "آدم",
-    userId: "@movhde",
-    time: "1h",
-    tweetBody: "بدنه توییت دوم.",
-    image: image,
-  },
-  {
-    username: "mahla",
-    userId: "@_dokhtarok",
-    time: "Nov 15",
-    tweetBody: "بدنه توییت سوم.",
-    image: image,
-  },
-  {
-    username: "arezoo",
-    userId: "@some_one",
+    username: "Taher Ghoreyshi",
+    userId: "@taher_gh",
     time: "Nov 14",
-    tweetBody:
-      "a test tweet. some random text here.some random text here.some random text here.some random text here.some random text here.some random text here.some random text here.",
-    image: image,
+    tweetBody: "سلام بر طاهر عزیز و گرامی.",
+    avatar: taherPic,
   },
   {
-    username: "hossein",
-    userId: "@fer_feri",
-    time: "4h",
+    username: "Bill Gates",
+    userId: "@BillGates",
+    time: "1h",
+    tweetBody: "a random tweet.",
+    avatar: billPic,
+    tweetImg: "",
+  },
+  {
+    username: "Alireza Ghorbani",
+    userId: "@arghorbani51",
+    time: "13h",
     tweetBody:
-      "سلام وقتتون بخیر. ایشالا که سالم و سلامت باشید این بدنه قراره طولانی باشه خدانگهدار.",
-    image: image,
+      "با افتخار در تاریخ ۳۰ و ۳۱ خرداد ماه میزبان مردم گرامی استان تهران هستیم.",
+    avatar: alirezaPic,
+    tweetImg: poster,
+  },
+  {
+    username: "Adele",
+    userId: "@Adele",
+    time: "Nov 15",
+    tweetBody: "My new album is available on all platforms!",
+    avatar: adelePic,
+    tweetImg: "",
+  },
+  {
+    username: "jadi",
+    userId: "@jadi",
+    time: "4h",
+    tweetBody: "بفرمایید شام",
+    avatar: jadiPic,
+    tweetImg: meals,
   },
 ];
 
@@ -56,7 +66,8 @@ const Tweets = () => {
           userId={tweet.userId}
           time={tweet.time}
           tweetBody={tweet.tweetBody}
-          image={tweet.image}
+          avatar={tweet.avatar}
+          tweetImg={tweet.tweetImg}
         />
       ))}
     </div>

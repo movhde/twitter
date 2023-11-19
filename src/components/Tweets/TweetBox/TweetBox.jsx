@@ -78,7 +78,7 @@ const TweetBox = (props) => {
   return (
     <Card className="backdrop">
       <div className={classes.avatar}>
-        <Avatar src={props.image} />
+        <Avatar src={props.avatar} />
       </div>
       <div className={classes.tweetBox}>
         <div className={classes.tweetInfo}>
@@ -103,6 +103,11 @@ const TweetBox = (props) => {
         </div>
         <div className={classes["tweetBox-body"]}>
           <p dir="auto">{props.tweetBody}</p>
+          {props.tweetImg && (
+            <div className={classes["tweetBox-image"]}>
+              <img src={props.tweetImg} alt="Tweet body image" />
+            </div>
+          )}
         </div>
         <div className={classes.interactionBar}>{ICONS}</div>
       </div>

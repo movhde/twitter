@@ -1,23 +1,26 @@
+import alirezaPic from "../../../assets/alirezaghorbani.jpg";
+import taherPic from "../../../assets/taher.jpg";
+import jadiPic from "../../../assets/jadi.jpg";
+
 import Wrapper from "../Wrapper/Wrapper";
-import image from "../../../assets/movahedeProfile.jpg";
-import classes from "./SuggestBox.module.css";
 import SuggestAccount from "./SuggestAccount";
+import classes from "./SuggestBox.module.css";
 
 const INFO = [
   {
-    image: image,
-    user: "movahede",
-    userId: "@_movhde",
+    image: alirezaPic,
+    user: "Alireza Ghorbani",
+    userId: "@arghorbani51",
   },
   {
-    image: image,
-    user: "amir",
-    userId: "@en_san",
+    image: jadiPic,
+    user: "jadi",
+    userId: "@jadi",
   },
   {
-    image: image,
-    user: "حصین",
-    userId: "@_oskolBache",
+    image: taherPic,
+    user: "Taher Ghoreyshi",
+    userId: "@taher_gh",
   },
 ];
 
