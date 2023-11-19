@@ -71,7 +71,7 @@ const NavItems = () => {
           <Avatar src={image} />
         </div>
         <div className={classes.usernameContainer}>
-          <span className={classes.username}>movhde</span>
+          <span className={classes.username}>movahde</span>
           <span className={classes.userId}>@movahde</span>
         </div>
         <div className={classes.icon}>

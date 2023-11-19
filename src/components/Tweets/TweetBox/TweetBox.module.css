@@ -28,7 +28,8 @@
 }
 
 .light-size {
-  font-weight: lighter;
+  font-size: 0.9rem;
+  color: #71767b;
 }
 
 .text-underline:hover {
