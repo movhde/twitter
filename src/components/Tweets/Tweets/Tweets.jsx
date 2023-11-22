@@ -18,6 +18,12 @@ const TWEETS = [
     time: "Nov 14",
     tweetBody: "سلام بر طاهر عزیز و گرامی.",
     avatar: taherPic,
+    reactions: {
+      reply: "12",
+      retweet: "2",
+      like: "120",
+      view: "400",
+    },
   },
   {
     username: "Bill Gates",
@@ -26,6 +32,12 @@ const TWEETS = [
     tweetBody: "a random tweet.",
     avatar: billPic,
     tweetImg: "",
+    reactions: {
+      reply: "30",
+      retweet: "9",
+      like: "420",
+      view: "800",
+    },
   },
   {
     username: "Alireza Ghorbani",
@@ -35,6 +47,12 @@ const TWEETS = [
       "با افتخار در تاریخ ۳۰ و ۳۱ خرداد ماه میزبان مردم گرامی استان تهران هستیم.",
     avatar: alirezaPic,
     tweetImg: poster,
+    reactions: {
+      reply: "5",
+      retweet: "",
+      like: "10",
+      view: "59",
+    },
   },
   {
     username: "Adele",
@@ -43,6 +61,12 @@ const TWEETS = [
     tweetBody: "My new album is available on all platforms!",
     avatar: adelePic,
     tweetImg: "",
+    reactions: {
+      reply: "120",
+      retweet: "40",
+      like: "500",
+      view: "990",
+    },
   },
   {
     username: "jadi",
@@ -51,6 +75,12 @@ const TWEETS = [
     tweetBody: "بفرمایید شام",
     avatar: jadiPic,
     tweetImg: meals,
+    reactions: {
+      reply: "26",
+      retweet: "13",
+      like: "106",
+      view: "330",
+    },
   },
 ];
 
@@ -68,6 +98,7 @@ const Tweets = () => {
           tweetBody={tweet.tweetBody}
           avatar={tweet.avatar}
           tweetImg={tweet.tweetImg}
+          reactions={tweet.reactions}
         />
       ))}
     </div>
